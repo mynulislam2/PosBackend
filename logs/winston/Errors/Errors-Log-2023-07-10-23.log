@@ -1,0 +1,72 @@
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'role' ],
+      message: 'role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  service: 'user-service',
+  label: 'Ph',
+  timestamp: '2023-07-10T17:01:29.703Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'role' ],
+      message: 'role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  service: 'user-service',
+  label: 'Ph',
+  timestamp: '2023-07-10T17:03:59.192Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'role' ],
+      message: 'role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  service: 'user-service',
+  label: 'Ph',
+  timestamp: '2023-07-10T17:10:47.718Z'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'role' ],
+      message: 'role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  service: 'user-service',
+  label: 'Ph',
+  timestamp: '2023-07-10T17:13:16.312Z'
+}
