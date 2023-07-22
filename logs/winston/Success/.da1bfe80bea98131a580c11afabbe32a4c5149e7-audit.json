@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\HP\\Desktop\\PosBackend\\Logs\\winston\\Success\\.da1bfe80bea98131a580c11afabbe32a4c5149e7-audit.json",
+    "files": [
+        {
+            "date": 1690040213890,
+            "name": "C:\\Users\\HP\\Desktop\\PosBackend\\Logs\\winston\\Success\\Success-Log-2023-07-22-21.log",
+            "hash": "20501b2a62a7c255b9730c64848cc9cabf53649e2a285eee518821e55f957cc1"
+        }
+    ],
+    "hashType": "sha256"
+}
