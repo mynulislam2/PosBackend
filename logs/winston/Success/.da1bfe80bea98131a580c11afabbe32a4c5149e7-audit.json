@@ -6,9 +6,15 @@
     "auditLog": "C:\\Users\\HP\\Desktop\\PosBackend\\Logs\\winston\\Success\\.da1bfe80bea98131a580c11afabbe32a4c5149e7-audit.json",
     "files": [
         {
+<<<<<<< HEAD
             "date": 1690040551964,
             "name": "C:\\Users\\HP\\Desktop\\PosBackend\\Logs\\winston\\Success\\Success-Log-2023-07-22-21.log",
             "hash": "fe1ca6b84e2c4f4358860f79b77800b4dfa0a5d26b2033db749cb12fbe123c23"
+=======
+            "date": 1690040213890,
+            "name": "C:\\Users\\HP\\Desktop\\PosBackend\\Logs\\winston\\Success\\Success-Log-2023-07-22-21.log",
+            "hash": "20501b2a62a7c255b9730c64848cc9cabf53649e2a285eee518821e55f957cc1"
+>>>>>>> main
         }
     ],
     "hashType": "sha256"
