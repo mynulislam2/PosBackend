@@ -1,8 +1,8 @@
 import { RequestHandler } from "express";
 import { dbConnect } from "../../database/db";
 import {v4 as uuidv4} from 'uuid'
-// import bcrypt from 'bcryptjs';
-//import { UserService } from "./user.service";
+import { string } from "zod";
+
 
 export const createUsers: RequestHandler = async (req, res, next) => {
   // const { user } = req.body
@@ -12,52 +12,118 @@ export const createUsers: RequestHandler = async (req, res, next) => {
   const password = req.body['password']
   const cpassword = req.body['cpassword']
 
-  // const hashedPassword =await bcrypt.hash(password,10);
-  // const hashedCPassword =await bcrypt.hash(cpassword,10);
-  // console.log(hashedPassword+hashedCPassword)
-  
-   const RegSql = `INSERT INTO users(uid, userName, email, password, cpassword) VALUES (?, ?, ?, ?, ?)`
+  const emailExistQuery = `SELECT COUNT(*) as emailCnt FROM users WHERE email = '${email}'`
 
+  dbConnect.db.query(emailExistQuery,(err,data)=>{
+
+    const emailCnt =  data[0].emailCnt
+
+    if(emailCnt>0){
+
+      res.status(400).json({
+              success: false,
+              message: "User Already Exists In this Email!",
+            })
+    }else{
+ 
+      const RegSql = `INSERT INTO users(uid, userName, email, password, cpassword) VALUES (?, ?, ?, ?, ?)`
+
+
+      try {
+    
+        if(password != cpassword){
+          res.status(400).json({
+            success: false,
+            message: "Password and Confirm Password should be same",
+          })
+    
+        } else {
+    
+          dbConnect.db.query(RegSql,[uid,userName,email,password,cpassword],(err,result)=>{
+    
+            if(err){
+      
+              res.status(400).json({
+                success: false,
+                message: "Registration Failed",
+                data: err
+              })
+      
+            } else {
+      
+              res.status(200).json({
+                success: true,
+                message: "successfully Registered!",
+                data: result
+              })
+            }
+      
+          })
+        }
+    
+    
+      } catch (error) {
+        next(error)
+    
+      }
+    }
+    
+
+  })
+
+}
+
+export const login : RequestHandler = async (req,res,next) => {
+
+  const email = req.body['email']
+  const password = req.body['password']
+  const logSql = `SELECT * FROM users WHERE email= ? AND password= ? `
 
   try {
-
-    if(password != cpassword){
-      res.status(400).json({
-        success: false,
-        message: "Password and Confirm Password should be same",
-      })
-    }
-
-    dbConnect.db.query(RegSql,[uid,userName,email,password,cpassword],(err,result)=>{
-
+    dbConnect.db.query(logSql,[email,password],(err,data)=>{
+    
       if(err){
-
+        
         res.status(400).json({
           success: false,
-          message: "Registration Failed",
+          message: "login Failed",
           data: err
         })
-
+  
       } else {
+
+        
+      if(data !== undefined && data.length > 0){
 
         res.status(200).json({
           success: true,
-          message: "successfully Registered!",
-          data: result
+          message: "successfully logged in!",
+          data: data
         })
+        
+      } else{
+
+        res.status(401).json({
+          success: false,
+          message: "Invalid login credentials",
+          data: data
+        })
+
       }
-
+  }
+     
+  
+  
     })
-
-
-    // const result = await UserService.createUser(user)
-
   } catch (error) {
     next(error)
-
+    
   }
+
+
 }
 
 export const UserController = {
-  createUsers
+  createUsers,
+  login
 }
