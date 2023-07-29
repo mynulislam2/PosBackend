@@ -1,7 +1,7 @@
 import { RequestHandler } from "express";
 import { dbConnect } from "../../database/db";
-import {v4 as uuidv4} from 'uuid'
-import { string } from "zod";
+import { v4 as uuidv4 } from 'uuid'
+import { QueryError, RowDataPacket } from "mysql2";
 
 
 export const createUsers: RequestHandler = async (req, res, next) => {
@@ -14,7 +14,7 @@ export const createUsers: RequestHandler = async (req, res, next) => {
 
   const emailExistQuery = `SELECT COUNT(*) as emailCnt FROM users WHERE email = '${email}'`
 
-  dbConnect.db.query(emailExistQuery,(err,data)=>{
+  dbConnect.db.query(emailExistQuery,(err: QueryError | null, data: RowDataPacket[])=>{
 
     const emailCnt =  data[0].emailCnt
 
@@ -39,7 +39,7 @@ export const createUsers: RequestHandler = async (req, res, next) => {
     
         } else {
     
-          dbConnect.db.query(RegSql,[uid,userName,email,password,cpassword],(err,result)=>{
+          dbConnect.db.query(RegSql,[uid,userName,email,password,cpassword],(err: QueryError | null, result: RowDataPacket[])=>{
     
             if(err){
       
@@ -80,10 +80,9 @@ export const login : RequestHandler = async (req,res,next) => {
   const logSql = `SELECT * FROM users WHERE email= ? AND password= ? `
 
   try {
-    dbConnect.db.query(logSql,[email,password],(err,data)=>{
+    dbConnect.db.query(logSql,[email,password],(err: QueryError | null, data: RowDataPacket[])=>{
     
       if(err){
-        
         res.status(400).json({
           success: false,
           message: "login Failed",
