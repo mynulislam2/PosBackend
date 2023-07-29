@@ -1,0 +1,148 @@
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+<<<<<<< HEAD
+  timestamp: '2023-07-22T15:42:32.001Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:46:32.489Z'
+=======
+  timestamp: '2023-07-22T15:36:54.140Z'
+>>>>>>> main
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:49:04.944Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:50:11.375Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:50:13.466Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:50:24.909Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:50:38.405Z'
+}
+{
+  service: 'user-service',
+  level: 'error',
+  message: 'Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.',
+  stack: 'MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n' +
+    '    at _createMongoClient (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\connection.js:742:29)\n' +
+    '    at Mongoose.connect (C:\\Users\\HP\\Desktop\\PosBackend\\node_modules\\mongoose\\lib\\index.js:406:15)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:14:20\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:4:12)\n' +
+    '    at boostrap (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:25:12)\n' +
+    '    at Object.<anonymous> (C:\\Users\\HP\\Desktop\\PosBackend\\src\\server.ts:38:1)',
+  label: 'Ph',
+  timestamp: '2023-07-22T15:50:41.646Z'
+}
