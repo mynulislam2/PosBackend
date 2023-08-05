@@ -2,7 +2,7 @@ import { RequestHandler } from "express";
 import { dbConnect } from "../../database/db";
 import { v4 as uuidv4 } from 'uuid'
 import { QueryError, RowDataPacket } from "mysql2";
-
+//mynul
 
 export const createUsers: RequestHandler = async (req, res, next) => {
   // const { user } = req.body
