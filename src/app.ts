@@ -1,24 +1,23 @@
-import express, { Application } from 'express'
-import cors from 'cors'
+import express, { Application } from 'express';
+import cors from 'cors';
+import multer from 'multer';
+import bodyParser from 'body-parser';
 import { UserRoutes } from './app/modules/User/user.routes'
+import { CategoryRoutes } from './app/modules/category/category.routes';
 
-//import multer from 'multer';
-//import bodyParser from 'body-parser';
+const upload = multer();
+
 import env from 'dotenv';
 env.config();
 const app: Application = express()
 app.use(cors())
-//app.use(multer())
+app.use(upload.any())
 
 
-
-//parser
-//app.use(bodyParser)
-//app.use(bodyParser.json())
-//app.use(bodyParser.urlencoded({extended:true}))
- app.use(express.json())
- app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 app.use('/api/v1/users', UserRoutes)
+app.use('/api/v1/category',CategoryRoutes)
 
 
 
